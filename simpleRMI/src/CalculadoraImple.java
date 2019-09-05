@@ -4,7 +4,7 @@ import java.rmi.server.UnicastRemoteObject;
  *
  * @author caiovosilva
  */
-public class CalculadoraImple extends UnicastRemoteObject implements Calculadora {
+public class CalculadoraImple extends UnicastRemoteObject implements ICalculadora {
     private static final long serialVersionUID = 1L;
     
     protected CalculadoraImple() throws RemoteException {

@@ -10,9 +10,9 @@ public class CalculadoraServer {
 
     public CalculadoraServer() {
         try {
-            System.setProperty("java.rmi.server.hostname", "192.168.86.10");
+            System.setProperty("java.rmi.server.hostname", "200.128.35.125");
             LocateRegistry.createRegistry(1099);
-            Calculadora c = new CalculadoraImple();
+            ICalculadora c = new CalculadoraImple();
             Naming.bind("CalculadoraService", (Remote) c);
         } catch (Exception e) {
             e.printStackTrace();

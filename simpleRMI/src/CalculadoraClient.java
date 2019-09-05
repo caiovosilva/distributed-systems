@@ -7,7 +7,7 @@ import java.rmi.Naming;
 public class CalculadoraClient {
     public static void main(String [] args) {
         try {
-            Calculadora c = (Calculadora) Naming.lookup("rmi://192.168.86.10:1099/CalculadoraService");
+            ICalculadora c = (ICalculadora) Naming.lookup("rmi://200.128.35.125:1099/CalculadoraService");
             System.out.println("Adicao: " + c.add(10, 15));
         } catch (Exception e) {
             e.printStackTrace();

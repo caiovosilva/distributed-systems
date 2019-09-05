@@ -4,6 +4,6 @@ import java.rmi.RemoteException;
  *
  * @author caiovosilva
  */
-public interface Calculadora extends Remote {
+public interface ICalculadora extends Remote {
     public long add(long a, long b) throws RemoteException;
 }
